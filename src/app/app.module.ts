@@ -13,10 +13,12 @@ import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AboutComponent
 
   ],
   imports: [
+    AppComponent,
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,

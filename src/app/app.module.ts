@@ -9,23 +9,21 @@ import {FlexLayoutModule} from '@angular/flex-layout';
 
 import { MyUsersService } from './my-users.service';
 import { AppRoutingModule } from './/app-routing.module';
-import { AboutComponent } from './about/about.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent
 
   ],
   imports: [
-    AppComponent,
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
     FlexLayoutModule,
     HttpModule,
-    AppRoutingModule,
-    AboutComponent
+    AppRoutingModule
+  
   ],
   providers: [
     MyUsersService

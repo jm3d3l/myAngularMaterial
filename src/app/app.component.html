@@ -1,10 +1,24 @@
-<mat-toolbar color="primary">
-  <small text="center">this is rock n roll </small>
-</mat-toolbar>
+<div class="container">
+  <div class="header">
+      <mat-toolbar id="tool-bar" class="mat-elevation-z2">
+           <img  class="logo" src="../assets/images/logo.png" alt="">
+            <router-outlet></router-outlet>
+            <span class="space-for-align"></span>
+            <button class="nav get" mat-button >home</button>
+            <button class="nav doc" mat-button>documentation</button>  
+            <button class="nav git" mat-button style="padding: 5px" >git hub</button>  
+      </mat-toolbar>
+  </div>
+      <div class="body-color" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
+        <div class="com" fxFlex="50%">
+          <h1 class="company">  <img class="body-logo" src="../assets/images/logo.png" >Software Development Company</h1>
+          <p style="color:#f0f3fa">We build custom web, mobile, and cross-platform solutions
+             <span style="text-indent: 50px">that keep you one step ahead of the competition.</span>
+              </p>
+              <button mat-raised-button style="background:#54cbff; margin: 10px"> find out more</button>
+        </div>
 
-<div class="container" fxLayout fxLayout.xs="column" fxLayout.align="center" fxLayoutGap="10px" fxLayoutGap.xs="0">
-  <div class="item item-1" fxFlex="15%" style="background: red"> rock n roll </div>
-  <div class="item" fxFlex style="background: rgb(178, 233, 48)">rock 3 </div>
-  <div class="item item-2" fxFlex="15%" style="background: rgb(57, 61, 182)">item two</div>
+      </div>
 
+ 
 </div>
